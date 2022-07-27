@@ -1,3 +1,15 @@
-jinja2>=2.10
+#jinja2>=2.10
 numpy>=1.8.1
-ilamb>=2.1
+#ilamb>=2.1
+
+# following versions as used on Cheyenne :
+# $ cesm_pp_activate
+# $ pip freeze
+MarkupSafe==1.1.1
+#cf_units==2.0.2
+scipy==1.2.1
+numpy==1.15.4
+Jinja2==2.10.1
+sympy==1.4
+
+cf_units==1.2.0

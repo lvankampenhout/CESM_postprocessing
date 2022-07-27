@@ -23,11 +23,12 @@ SUBDIRS = \
 	mpi_utils \
 	reshaper \
 	averager \
-	timeseries \
-        conformer \
         conform \
-	ilamb \
-	diagnostics 
+	timeseries \
+	diagnostics
+
+        #conformer \
+	#ilamb \
 
 # MAKECMDGOALS is the make option: make 'clobber' or 'all'
 TARGET = $(MAKECMDGOALS)

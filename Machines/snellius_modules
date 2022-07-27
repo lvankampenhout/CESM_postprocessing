@@ -1,0 +1,14 @@
+#!/bin/bash -l
+
+echo "Python boot-strap modules for machine snellius"
+
+module load 2021
+#module load CMake/3.20.1-GCCcore-10.3.0
+#module load netCDF-Fortran/4.5.3-gompi-2021a
+#module load netCDF/4.8.0-gompi-2021a
+#module load ScaLAPACK/2.1.0-gompi-2021a-fb
+module load NCO/5.0.1-foss-2021a
+module load netcdf4-python/1.5.7-foss-2021a
+
+module list
+
