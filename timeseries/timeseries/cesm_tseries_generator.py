@@ -54,7 +54,7 @@ def commandline_options():
     parser.add_argument('--backtrace', action='store_true',
                         help='show exception backtraces as extra debugging output')
 
-    parser.add_argument('--debug', nargs=1, required=False, type=int, default=0,
+    parser.add_argument('--debug', required=False, type=int, nargs='?', default=0, const=2,
                         help='debugging verbosity level output: 0 = none, 1 = minimum, 2 = maximum. 0 is default')
 
     parser.add_argument('--caseroot', nargs=1, required=True,
