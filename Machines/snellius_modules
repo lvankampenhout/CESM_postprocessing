@@ -1,14 +1,39 @@
 #!/bin/bash -l
+#
+# 
+# Hello,
+# 
+# The CESM post-processing suite is currently *only supported* on NCAR machines due to limited
+# resources. The python software-stack uses vanilla python 2.7 (not anaconda) and the virtualenv package:
+# 
+# https://help.dreamhost.com/hc/en-us/articles/215489338-Installing-and-using-virtualenv-with-Python-2
+# 
+# Once you have a virtualenv, then you can install additional python package dependencies. Some
+# of the packages require underlying C library builds, such as netCDF4-python and PyNIO, so you 
+# will need to work with your systems administrator to make sure these libraries are built correctly.
+# 
+# NCAR has chosen to move away from the module system for managing and loading python packages
+# in favor of virtualenvs that can be cloned into any user's environment and once activated, contain
+# all the necessary python packages required by the CESM post-processing suite of tools. This change
+# is included in the most recent Github tagged versions of the CESM post-processing suite, v1.0.z.
+# 
+# Hope this helps,
+# Alice
+#
+# email by Alice Bertini to Leo van Kampenhout, 29 October 2018
 
 echo "Python boot-strap modules for machine snellius"
 
+module purge
 module load 2021
-#module load CMake/3.20.1-GCCcore-10.3.0
-#module load netCDF-Fortran/4.5.3-gompi-2021a
-#module load netCDF/4.8.0-gompi-2021a
-#module load ScaLAPACK/2.1.0-gompi-2021a-fb
+
+module load netCDF-Fortran/4.5.3-gompi-2021a
+module load netCDF/4.8.0-gompi-2021a
+
 module load NCO/5.0.1-foss-2021a
-module load netcdf4-python/1.5.7-foss-2021a
+
+#module load netcdf4-python/1.5.7-foss-2021a
+#module load netcdf4-python/1.5.7-foss-2021a
 
 module list
 

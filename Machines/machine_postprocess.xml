@@ -308,7 +308,7 @@
 
 
   <machine name="snellius" hostname="int1,int2,int3,int4">
-    <timeseries_pes  nodes="1" pes_per_node="128" wallclock="04:00:00" memory="500G">128</timeseries_pes>
+    <timeseries_pes  nodes="1" pes_per_node="128" wallclock="12:00:00" memory="500G">128</timeseries_pes>
     <xconform_pes  nodes="1" pes_per_node="128" wallclock="06:00:00" memory="500G">128</xconform_pes>
     <ocn_remap_pes  nodes="1" pes_per_node="128" wallclock="08:00:00" memory="500G">128</ocn_remap_pes>
     <mpi_command>srun</mpi_command>

@@ -25,9 +25,9 @@ SUBDIRS = \
 	averager \
         conform \
 	timeseries \
+        conformer \
 	diagnostics
 
-        #conformer \
 	#ilamb \
 
 # MAKECMDGOALS is the make option: make 'clobber' or 'all'
